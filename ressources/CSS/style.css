@@ -1,0 +1,279 @@
+
+/*Global*/
+body{
+  font-family: 'lato', sans-serif;
+}
+h1,h2,h3,h4{
+  
+  text-transform: uppercase;
+  font-weight: 300px;
+  font-family: 'lato', sans-serif;
+  letter-spacing: -1px;
+  word-spacing: 8px;
+}
+h1{
+  color: #fff;
+}
+h2{
+  color: #333;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+h2:after{
+  display: block;
+  height: 2px;
+  width: 100px;
+  background-color: rgb(27, 236, 27);
+  content: " ";
+  margin: 0 auto;
+  margin-top: 20px;
+}
+h3{
+  font-size: 20px;
+}
+p{
+  font-size: 12px;
+  font-weight: 300;
+}
+section{
+  padding: 30px 0 60px 0;
+}
+
+/* PARTIE HEADR*/
+header{
+     background-image: linear-gradient(
+        rgba(0, 242, 96, 0.4),
+        rgba(7, 117, 230, 0.6)
+      ),
+      url(../images/header.jpg);
+     height: 100vh;
+     background-position: center;
+     background-size: cover;
+}
+.title{
+  position: absolute;
+  top: 30%;
+}
+.title h1{
+  font-size: 340%;
+}
+.title p{
+  color: white;
+}
+/*-------------boutons--------------*/
+.btn{
+  padding: 10px;
+  margin: 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 1s, color 1s, border 1s;
+}
+.btn-full{
+  background-color: azure;
+  color: green;
+  margin-right: 15px;
+}
+.btn-ghost{
+  border: white solid 1px;
+  color: #eee;
+}
+.btn-full:hover{
+  background-color: green;
+  color: #fff;
+}
+.btn-ghost:hover{
+  background-color: green;
+  color: #fff;
+  border: green solid 1px;
+}
+
+/*----------PRODUITS-------------------*/
+.produits-plus{
+  margin: 20px 0;
+}
+.produits-plus:hover .produit-icone{
+  transform: translateX(20px);
+  color: grey;
+}
+
+.produit-img{
+  max-width: 100%;
+  height: auto;
+}
+.produit-icone{
+  font-size: 30px;
+  color: rgb(9, 146, 9);
+  transition: all 1s;
+}
+/* #### Famille THES ### */
+.familles-thes{
+  background-color: #cdf6e1;
+}
+.famille-detail{
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px  rgba(0, 0, 0, 0.3);
+}
+.famille-detail img{
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+}
+.famille-detail h4{
+  text-align: center;
+}
+/*----------galeries IMAGES-------------------*/
+.galeries-img{
+  display: block;
+  background-size: cover;
+  background-position: top center;
+  height: 300px;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  box-shadow: 0 0 10px  rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+  
+  
+}
+.galerie-titre{
+  bottom: 40px;
+  left: 40px;
+}
+.galerie-titre h4{
+  color: #fff;
+}
+/*----------AVIS CLIENTS-------------------*/
+.clients{
+  background-image: linear-gradient(
+    rgba(0, 242, 96, 0.4),
+    rgba(7, 117, 230, 0.6)
+  ), url(../images/the-paysage.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.clients h2{
+  color: #fff;
+}
+.clients h2:after{
+  background-color: #fff;
+}
+
+blockquote:before{
+  content: "\201C";
+  font-size: 70px;
+  font-family: 'Sanchez', sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+blockquote{
+  color: #fff;
+  font-style: italic;
+  line-height: 130%;
+  padding: 5px;
+}
+
+cite{
+  font-size: 90%;
+  display: block;
+  margin-top: 20px;
+}
+cite img{
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+/*----------PACKS-------------------*/
+.packs{
+  box-shadow: 0 0 5px rgba(0,0,0, 0.3);
+  border-radius: 10px;
+}
+.pack-premium{
+  background: rgb(26, 163, 26);
+  color: #fff;
+}
+.pack-title-premium{
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  top: 10px;
+  right: 30px;
+  background-color: #fff;
+  color: green;
+  border-radius: 10px;
+  padding: 5px;  
+}
+#titre-premium{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -14px;
+}
+.packs h3{
+  color: green;
+  font-weight: 400;
+}
+.packs h4{
+  font-size: 200%;
+  font-weight: 100;
+}
+.packs span{
+  font-weight: 100;
+  font-size: 40%;
+  position: relative;
+  top: -15px;
+  left: 2px
+}
+.packs-title{
+  padding: 10px 10px 0 10px;
+  border-bottom: 1px solid #e3e0e0;
+}
+.packs-content ul{
+  list-style: none;
+  padding: 20px;
+  font-weight: 100;
+  line-height: 35px;
+
+}
+.packs-content ul li i{
+  font-size:  90%;
+  margin-right: 10px;
+}
+.packs-signup{
+  text-align: center;
+}
+.btn-pack{
+  background-color: green;
+  color: white;
+  margin-bottom: 20px;
+}
+.packs-signup:hover .btn-pack{
+  background-color: rgb(56, 172, 56);
+  color: #fff;
+}
+/*----------CONTACT-------------------*/
+.contact-form{
+  margin-bottom: 30px;
+}
+.contact-message{
+  width: 100%;
+}
+.btn-contact{
+  background-color: green;
+  color: green;
+  color: white;
+}
+footer{
+  background-color: black;
+  color: #fff;
+  height: 60px;
+  padding: 20px;
+}
+.copyright{
+  text-align: center;
+}
+.copyright a{
+  color: white;
+}
